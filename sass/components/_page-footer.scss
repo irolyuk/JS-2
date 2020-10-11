@@ -1,0 +1,127 @@
+.footer {
+  background-color: $footerColor;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-adress .street {
+    color: $bgColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &-adress > a {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $footerSecColor;
+  }
+  &-adress > b {
+    color: $bgColor;
+    font-weight: $fontWeight;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .copyright {
+    @media screen and(max-width: 1200px) {
+      visibility: hidden;
+    }
+    font-size: 12px;
+    line-height: 2;
+    text-align: $textAlign;
+    letter-spacing: 0.03em;
+    color: $footerSecColor;
+  }
+  b {
+    display: $disInblock;
+    margin-bottom: 21px;
+    color: $bgColor;
+  }
+}
+
+.footer-container {
+  margin: 0 auto;
+  @media screen and(min-width: 1200px) {
+    border-bottom: 1px solid $footerSecColor;
+  }
+  padding-bottom: 28px;
+  justify-content: space-between;
+  align-items: baseline;
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer-adress {
+  @media screen and(max-width: 1200px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  p {
+    margin-bottom: 9px;
+  }
+  .link {
+    display: $disInblock;
+    margin-bottom: 9px;
+  }
+}
+.connect {
+  text-align: center;
+  @media screen and(min-width: 1200px) {
+    text-align: left;
+    width: 212px;
+    height: 83px;
+  }
+}
+.footer-connect {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and(max-width: 768px) {
+    padding-left: 137px;
+    padding-right: 137px;
+    margin-bottom: 60px;
+  }
+  a {
+    color: $bgColor;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $footerSecColor;
+    border-radius: 50% 50%;
+    transition: $cubicAllAnimation;
+  }
+  li:nth-child(2) {
+    margin-left: 12px;
+  }
+  li:nth-child(3) {
+    margin-left: 12px;
+  }
+  li:nth-child(4) {
+    margin-left: 12px;
+  }
+
+  a:hover {
+    color: $bgColor;
+    background-color: $hoverColor;
+    border-radius: 50% 50%;
+  }
+}

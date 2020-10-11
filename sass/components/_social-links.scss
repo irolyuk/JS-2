@@ -1,0 +1,18 @@
+.social-links {
+  justify-content: space-around;
+  margin-bottom: 24px;
+  a {
+    height: 44px;
+    color: #afb1b8;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+    transition: $cubicAllAnimation;
+    &:hover {
+      color: $bgColor;
+      background-color: $hoverColor;
+      border-radius: 50% 50%;
+    }
+  }
+}

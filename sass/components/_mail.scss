@@ -1,0 +1,26 @@
+.mail-button {
+  height: 50px;
+  background-color: $hoverColor;
+  border-radius: 4px;
+  border: 0;
+  color: $bgColor;
+
+  align-items: center;
+  justify-content: center;
+  transition: $cubicAllAnimation;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
+}
+.mail-input {
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: $mailShadow;
+  border-radius: 4px;
+  padding-left: 16px;
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

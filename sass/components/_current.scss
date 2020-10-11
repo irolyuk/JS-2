@@ -1,0 +1,19 @@
+.current {
+  color: $hoverColor;
+  display: $disBlock;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.current::after {
+  content: "";
+  display: $disBlock;
+  position: $posA;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: $hoverColor;
+  border-radius: 2px;
+}

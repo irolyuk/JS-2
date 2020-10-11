@@ -1,0 +1,120 @@
+.portfolio-section {
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
+  border-top: 1px solid #ececec;
+}
+.we-doing-section {
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+.clients-section {
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
+}
+.qualities-section {
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
+}
+.team-section {
+  background: #f5f4fa;
+  padding-top: $mobilePadd;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  top: 10px;
+  left: 425px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  margin-left: 80px;
+  & li + li {
+    margin-left: 50px;
+  }
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: none;
+    &.is-open {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 480px;
+    height: 453px;
+    margin: 0;
+
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.proffesion {
+  margin-bottom: 16px;
+}
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    margin-bottom: -10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: $flex;
+    margin-bottom: 0px;
+    & li + li {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  & a {
+    color: #757575;
+    transition: $cubicAllAnimation;
+  }
+  & a:hover {
+    color: $hoverColor;
+  }
+  & li {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
+}

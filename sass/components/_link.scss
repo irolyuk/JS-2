@@ -1,0 +1,24 @@
+.link {
+  transition: $cubicColorAnimation;
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+  .navigation & {
+    display: $disBlock;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .item & {
+    display: $disInblock;
+    margin-bottom: 30px;
+    padding: 25px 104px;
+    background-color: $hoverColor;
+    border-radius: 4px;
+  }
+
+  &-icon {
+    height: 20px;
+    fill: $currCol;
+  }
+}

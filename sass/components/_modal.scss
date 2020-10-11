@@ -1,0 +1,180 @@
+.modal {
+  position: $posA;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+  background: $bgColor;
+  border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+  &-checkbox {
+    position: $posA;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  &-form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+  }
+  &-field {
+    position: relative;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+  }
+  &-label {
+    position: $posA;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    color: #757575;
+    transition: $cubicAllAnimation;
+    & svg {
+      color: $currCol;
+    }
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: $textAlign;
+    letter-spacing: 0.03em;
+    color: $mainColor;
+    margin-bottom: 30px;
+  }
+}
+
+.comment-label {
+  top: 12px;
+  left: 16px;
+  transform: translateY(0);
+}
+
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  &:hover,
+  &:focus {
+    border: 1px solid $hoverColor;
+    border-radius: 4px;
+    outline-style: none;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  &:focus + .modal-label,
+  &:not(:placeholder-shown) + .modal-label {
+    color: $hoverColor;
+    transform: translate(-25px, -40px);
+    font-size: 12px;
+  }
+}
+
+.textarea-input {
+  &:focus + .comment-label,
+  &:not(:placeholder-shown) + .comment-label {
+    color: $hoverColor;
+    transform: translate(0px, -30px);
+    font-size: 12px;
+  }
+}
+.modal-policy {
+  &-label {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+.modal-comment {
+  & textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
+  }
+  &-field {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: $cubicAllAnimation;
+    & textarea:hover,
+    & textarea:focus {
+      border: 1px solid $hoverColor;
+      border-radius: 4px;
+      outline-style: none;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.modal-submit {
+  width: 200px;
+  height: 50px;
+  background-color: $hoverColor;
+  color: $bgColor;
+  box-shadow: $modalShadow;
+  border-radius: 4px;
+  border: 0;
+  transition: $cubicAllAnimation;
+  &-button {
+    display: flex;
+    justify-content: center;
+  }
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
+}
+.modal {
+  position: relative;
+  &-close-button {
+    position: $posA;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: $bgColor;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: $cubicAllAnimation;
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+  }
+}

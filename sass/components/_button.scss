@@ -1,0 +1,14 @@
+.button {
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: hidden;
+  text-align: $textAlign;
+  transition: $cubicAllAnimation;
+  &:hover,
+  &:focus {
+    background: $hoverColor;
+    box-shadow: $buttonShadow;
+    border-radius: 4px;
+  }
+}

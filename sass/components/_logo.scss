@@ -1,0 +1,27 @@
+.logo {
+  font-family: $logoFont;
+  font-weight: $fontWeight;
+  font-size: 22px;
+  line-height: 1.2;
+  @media screen and(min-width: 480px) {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  @media screen and(min-width: 768px) {
+    margin: 0;
+  }
+  &-accent {
+    color: $hoverColor;
+  }
+  .footer & {
+    color: $bgColor;
+  }
+  .footer-adress & {
+    display: $disInblock;
+    margin-bottom: 10px;
+    font-family: $logoFont;
+    font-weight: $fontWeight;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}

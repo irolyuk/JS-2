@@ -1,0 +1,50 @@
+.cliets-list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    justify-content: space-around;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 50%;
+      margin: 15px 0px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: 33.3333%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 16.6666%;
+    }
+  }
+
+  a {
+    display: flex;
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      display: $flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
+    color: $clientsColor;
+    height: 90px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid $clientsColor;
+    justify-content: center;
+    align-items: center;
+    transition: $cubicAllAnimation;
+    &:hover {
+      border: 1px solid $hoverColor;
+    }
+  }
+}

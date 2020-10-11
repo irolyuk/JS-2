@@ -1,0 +1,57 @@
+.qualities-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .text {
+    color: $qualColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+  }
+
+  li {
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:nth-child(4) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .title {
+    font-weight: $fontWeight;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+
+    &::before {
+      display: $disBlock;
+      content: "";
+      height: 120px;
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+  }
+}
+.quailies-title {
+  display: none;
+}

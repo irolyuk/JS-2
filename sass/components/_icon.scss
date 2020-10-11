@@ -1,0 +1,102 @@
+.icon {
+  &-antenna::before {
+    background-image: url(../img/antenna1.svg);
+  }
+  &-clock::before {
+    background-image: url(../img/clock1.svg);
+  }
+  &-diagram::before {
+    background-image: url(../img/diagram1.svg);
+  }
+  &-astronaut::before {
+    background-image: url(../img/astronaut1.svg);
+  }
+}
+
+.header {
+  &-icon {
+    width: 16px;
+    height: 11px;
+    fill: $currCol;
+  }
+  &-tel {
+    width: 10px;
+    height: 15px;
+    fill: $currCol;
+  }
+}
+
+.modal-icon {
+  &-phone {
+    position: $posA;
+    top: 50%;
+    left: 19px;
+    transform: $translateY;
+    width: 13px;
+    height: 13px;
+    fill: $currCol;
+  }
+  &-close {
+    width: 11px;
+    height: 11px;
+    fill: $currCol;
+  }
+  &-subscribe {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $currCol;
+  }
+  &-name {
+    position: $posA;
+    top: 50%;
+    left: 19px;
+    transform: $translateY;
+    width: 12px;
+    height: 12px;
+    fill: $currCol;
+  }
+  &-mail {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 12px;
+    fill: currentColor;
+  }
+}
+.client {
+  &-icon {
+    fill: $currCol;
+  }
+}
+.footer-link {
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: $currCol;
+  }
+}
+.modal-checkbox {
+  &-icon {
+    width: 16px;
+    height: 15px;
+    fill: $currCol;
+    border: 2px solid $secondaryColor;
+    border-radius: 2px;
+    transition: $cubicAllAnimation;
+  }
+  &:checked + &-icon {
+    border-color: $hoverColor;
+    background-color: $hoverColor;
+    background-image: url("..//img/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+.modal-input {
+  &:focus ~ .modal-icon {
+    color: $hoverColor;
+  }
+}
