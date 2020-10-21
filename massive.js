@@ -207,31 +207,289 @@
 
 // console.log(total);
 
-//Cards
+// //Cards
 
-const cards = [
-    'Карточка-1',
-    'Карточка-2',
-    'Карточка-3',
-    'Карточка-4',
-    'Карточка-5',
-];
+// const cards = [
+//     'Карточка-1',
+//     'Карточка-2',
+//     'Карточка-3',
+//     'Карточка-4',
+//     'Карточка-5',
+// ];
 
-console.table(cards);
+// console.table(cards);
 
-// const cardToRemove = 'Карточка-3';
-// const index = cards.indexOf(cardToRemove);
+// // const cardToRemove = 'Карточка-3';
+// // const index = cards.indexOf(cardToRemove);
+// // console.log(index);
+// // cards.splice(index, 1);
+// // console.table(cards);
+
+// // const cardToInsert = 'Карточка-6';
+// // const index = 3;
+// // cards.splice(index, 0, cardToInsert);
+// // console.table(cards);
+
+// const cardToUpdate = 'Карточка-4';
+// const index = cards.indexOf(cardToUpdate);
 // console.log(index);
-// cards.splice(index, 1);
+// cards.splice(3, 1, 'Обновленная карточка-4');
 // console.table(cards);
 
-// const cardToInsert = 'Карточка-6';
-// const index = 3;
-// cards.splice(index, 0, cardToInsert);
-// console.table(cards);
 
-const cardToUpdate = 'Карточка-4';
-const index = cards.indexOf(cardToUpdate);
-console.log(index);
-cards.splice(3, 1, 'Обновленная карточка-4');
-console.table(cards);
+//Function
+
+// const add = function (a, b) {
+//     console.log(a);
+//     console.log(b);
+//     const result = a + b;
+//     console.log('Виконуєтся функція add')
+    
+//     return a * b;
+// }
+
+// const r1 = add(2, 3);       //те шо я ставлю в return, це результат з функції
+// console.log('r1:', r1);
+// const r2 = add(12, 13);
+// console.log('r2: ', r2);
+// const r3 = add(22, 23);
+// console.log('r3: ', r3);
+
+// const fn = function(value) {
+//     console.log(1);
+
+//     console.log(2);
+//     if ( value < 50) {
+//         return 'Менше 50';
+//     }
+
+//     return 'Більше 50';
+//     return 2;
+//     return 3;
+// }
+
+// console.log(fn(10));
+// console.log(fn(1000));
+
+
+// const fnA = function() {
+//     console.log('Выполняется функция A');
+
+//     fnB();
+// }
+
+// const fnB = function() {
+//     console.log('Выполняется функция B');
+
+//     fnC();
+// }
+
+// const fnC = function() {
+//     console.log('Выполняется функция C');
+
+//     console.log(value);
+// }
+
+// fnA();
+
+// Задача
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+
+// for (const value of cart) {
+//     total += value;
+// }
+
+// console.log('Total: ', total);
+
+
+// const calculateTotalPrice = function (items) {
+//     console.log('items внуцтри ф-ции: ', items);
+
+//     let total = 0;
+
+//     for (const item of items) {
+//         total += item;
+//     }
+//     return total;
+// }
+// const r1 = calculateTotalPrice([1, 2, 3]);
+// console.log(`Общая сума покупок ${r1}`);
+
+// console.log(calculateTotalPrice([5, 10, 15, 20]));
+// console.log(calculateTotalPrice([100, 200, 300]));
+// console.log(calculateTotalPrice([54, 28, 105, 70, 92, 12, 25, 90]));
+
+//LOG ITEMS
+
+// const logItems = function(items){
+//     for (const item of items) {
+//         console.log(item);
+//     }
+// }
+
+// logItems(['Mango','Kiwi','Poly','Ajax']);
+// logItems([1,2,3,4,5]);
+// logItems(['клавиатура','наушники','часы']);
+
+//Find Login
+
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'aj4xth3m4n';
+
+// const message = logins.includes(loginToFind)
+// ? `Пользователь ${loginToFind} найден`
+// : `Пользователь ${loginToFind} не найден`;
+
+// console.log(message);
+
+// const findLogin = function(allLogins, loginToFind) {        
+//     return allLogins.includes(loginToFind)
+//     ? `Пользователь ${loginToFind} найден`
+//     : `Пользователь ${loginToFind} не найден`;
+// };
+
+// console.log(findLogin(logins, 'avocod3r'));
+// console.log(findLogin(logins, 'k1widab3st'));
+// console.log(findLogin(logins, 'poly1scute'));
+// console.log(findLogin(logins, 'aj4xth3m4n'));
+
+// Find Smallest Number
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+
+
+// for (const number of numbers) {
+//         if (number < smallestNumber) {
+//             smallestNumber = number;        
+//         }    
+//     }
+    
+    // console.log('smallestNumber: ', smallestNumber);
+
+    // const findSmallestNumber = function (numbers) {
+    //     let smallestNumber = numbers[0];
+
+    //     for (const number of numbers) {
+    //         if (number < smallestNumber) {
+    //             smallestNumber = number;
+    //         }
+    //     }
+
+    //     return smallestNumber
+    // }
+
+
+    // console.log(findSmallestNumber([3, 8, 12, -2, 15]));
+    // console.log(findSmallestNumber([100, 54, 8, 12, 47]));
+    // console.log(findSmallestNumber([7, 21, 84, 15, 4]));
+
+    // Change case
+
+    // const string = 'qWeRTzxCv';
+    // const letters = string.split('');
+    // let invertedString = '';
+
+    // for (const letter of letters) {
+    //     const isEqual = letter === letter.toLowerCase();
+
+    //     invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
+    // }
+
+    // console.log('invertedString: ', invertedString);
+
+//     const changeCase = function(string) {
+//         const letters = string.split('');
+//         let invertedString = '';
+
+//         for (const letter of letters) {
+//             const isInLowerCase = letter === letter.toLowerCase();
+
+//             invertedString += isInLowerCase 
+//             ? letter.toUpperCase() 
+//             : letter.toLowerCase();
+//         }
+
+//         console.log(letters);
+//         return invertedString;
+//     }
+
+// console.log(changeCase('qweRTY'));
+// console.log(changeCase('mAnGo'));
+// console.log(changeCase('AjAx'));
+
+
+// Slugify
+
+// const title = 'Top 10 benefits of React framework';
+
+// const normalizedTitle = title.toLowerCase();
+// const words = normalizedTitle.split(' ');
+// const slug = words.join('-');
+
+// const slug1 = title.toLowerCase().split(' ').join('-');
+// console.log(slug1);
+
+// const Slugify = function(string) {
+//     return string.toLowerCase().split(' ').join('-');  // Easy LOL
+// }
+
+// console.log(Slugify('Top 10 benefits of React framework'));
+// console.log(Slugify('Azure Static Web Apps are Awesome'));
+// console.log(Slugify('Technical writing tips for non-native English speakers'));
+
+//Arguments
+
+// const fn = function () {
+//     console.log(arguments);
+    
+//     const args = Array.from(arguments);
+
+//     console.log(args);
+// };
+
+// fn(1, 2, 3,);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+
+// const fn = function (a,b,c, ...args) {
+//     console.log(`${a} ${b} ${c}`)
+//     console.log(args);
+// };
+
+// fn('hello', 1, 2, 3,);
+// fn('aloha', 1, 2, 3, 4, 5);
+// fn('hi', 1, 2, 3, 4, 5, 6, 7);
+
+const add = function (...args) {
+    console.log(args);
+
+    let total = 0;
+
+    for (const arg of args) {
+        total += arg;
+    }
+    return total;
+};
+
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 4, 5, 6));
+
+const filterNumbers = function(array, ...args) {
+    console.log('array: ', array);
+    console.log('args: ', args);
+    const uniqueElements = [];
+
+    for (const element of array) {        
+        if (args.includes(element)) {
+            uniqueElements.push(element);
+            console.log(`${element} есть везде`)            
+        }
+    }
+    return uniqueElements;
+};
+
+console.log(filterNumbers([1,2,3,4,5], 10, 15, 2, 3, 8));
+console.log(filterNumbers([10,15,25,30],23,30,18,15));
+console.log(filterNumbers([100,200,300,400,500], 7, 12, 200, 64));
